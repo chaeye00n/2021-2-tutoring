@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 퀴즈</title>
+    <style>
+        /* 헤더 부분 */
+        header {
+            background: url(background.png) repeat; /* 헤더의 배경 이미지 */
+            border: 1px solid white;
+        }
+        header .title {
+            margin:30px 500px; 
+            background-color: white;
+            opacity: 0.5;
+        }
+        header .title p {
+            margin: 5%;
+            font-size: 45px;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+        }
+
+        /* 퀴즈 부분 */
+        div.quiz { margin-left:500px;}
+        h2:first-letter { 
+            font-size: 30px;
+            color: red;
+            text-transform: uppercase;
+        }
+        h4:first-line {color:steelblue}
+        div.hint,
+        div.ans { opacity: 0.0; }
+        div.ans:hover { opacity: 1.0; color:steelblue; }
+        input:focus {background-color:beige;}
+        input:checked + .hint { opacity: 1.0; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <p>CSS 퀴즈</p>
+        </div>
+    </header>
+    
+    <div class="quiz">
+        <h2>quiz</h2>
+        <h4>[문제1] 내부 스타일 시트를 정의하는 데 사용되는 태그는?</h4>
+        <p>① css</p>
+        <p>② stylesheet</p>
+        <p>③ sheet</p>
+        <p>④ style</p>
+        <h2>answer</h2>
+        [힌트] <input type="checkbox"> 
+        <div class="hint">내부 스타일 시트는 HTML문서의 head태그 안에 (정답)을 지정합니다.</div>
+        <p></p>
+        [정답] <div class="ans">정답은 ②번입니다.</div>
+        <h2>quiz</h2>
+        <h4>[문제2] CSS3에서 불투명도를 적용하기 위한 속성은?</h4>
+        <p>정답 작성 : <input type="text"></p>
+        <h2>answer</h2>
+        [힌트] <input type="checkbox">
+        <div class="hint">'불투명'을 뜻하는 영문 단어를 찾아보세요.</div>
+        <p></p>
+        [정답] <div class="ans">정답은 'opacity' 입니다.</div>
+    </div>
+</body>
+</html>

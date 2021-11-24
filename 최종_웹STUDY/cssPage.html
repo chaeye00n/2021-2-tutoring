@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>웹STUDY :: CSS3 </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/icon.ico">
+
+    <!-- 부트스트랩 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 기본값, 헤더, 푸터 스타일 -->
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+
+</head>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+    <!-- 헤더영역 -->
+    <div class="header">
+        <a href="index.html"><img src="img/로고.png" style="width: 250px; padding-left: 50px;"></a>
+        <nav>
+            <span>
+                <a href="htmlPage.html">HTML5</a>
+            </span>
+            <span>
+                <a href="cssPage.html" class="active">CSS3</a>
+            </span>
+            <span>
+                <a href="jsPage.html">JavaScript</a>
+            </span>
+            <span>
+                <a href="aboutUs.html">About Us</a>
+            </span>
+        </nav>
+    </div>
+
+    <!-- 본문 -->
+    <div class="content">
+    <div class="card mb-3 container justify-content-center" style="max-width: 1024px; margin-top:100px;">
+        <div class="row g-0 " style="max-height: 210px; padding-bottom: 150px;">
+            <div class="col-md-3">
+                <a href="#"><img src="img/css퀴즈1.png" class="img-fluid rounded-start" alt="..."></a>
+            </div>
+            <div class="col-md-8">
+            <div class="card-body">
+                <a href="#" class="card-title">[CSS3] class 셀렉터 / 박스 모델 / 레이아웃 / 표 꾸미기</a><br><br>
+                <p class="card-text text-muted" style="font-size:12px;"> CSS 개요 - 스타일 시트 표준안으로, 웹 문서에 글꼴, 색상, 정렬과 각 요소의 배치 방법 등과 같은 디자인 요소를 적용하는 데 사용
+                    - 선택자 : 스타일 시트를 적용할 대상을 지정 - 속성 : 어떤 속성을 적용할지 선택 - 속성값 : 속성에 어떤 값을 반영할지 선택 - Ex) h1 { color : blue; font-size : 12px; } CSS 정의 문법
+                    - 어떤 태그 혹은 속성에 어떤 디자인을 적용할 것인지 선택 - 선언 블록 중심으로 앞에는 선택자를 적고, 블록 내에는 속성과 속성값을 {속성 : 속성값} 형태....</p>
+                <p class="card-text"><small class="text-muted">2021.11.19</small></p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+
+    <!-- 푸터 -->
+    <div class="footer_section">
+        <div class="footer">
+            <a href="index.html" class="f_logo"><img src="img/흑백로고.png" style="width: 250px;"></a>
+            <span class="intro">
+                <span>한양대학교 ERICA 2021년 2학기 튜터링</span>
+                <div>
+                    <!-- <span>나만의 웹 페이지 만들기</span> -->
+                    <ul class="name">
+                        <li>홍준영</li> <li>조준형</li> <li>김채연</li>
+                    </ul>
+                </div>
+            </span>
+        </div>
+    </div>
+
+</body>
+</html>

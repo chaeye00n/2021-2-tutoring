@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>웹STUDY :: Home </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/icon.ico">
+
+    <!-- 기본값, 헤더, 푸터 스타일 -->
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+
+    <style>
+        /* 본문 */
+        .content_title {position:absolute; left:50%; margin-left: -60px; margin-top:40px; margin-bottom:30px; color:rgb(54, 54, 54);
+                        font-size:26px; font-weight: bold; font-style: italic; border-bottom: 5px solid #ADB9CA;}
+        .contents {display:table; width:95%; margin:50px 100px;}
+        .contents_inner {display:table-cell; vertical-align: middle;}
+        .card {height: 400px; width: 370px; border-radius: 15px;
+                display:inline-block; margin-top:100px; margin-left:150px; margin-bottom:30px;
+                position:relative; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                overflow: hidden; transition: all 0.2s linear}
+        .card:hover {transform: scale(1.1);}
+        .card-header {width:100%; height:300px; border-radius:15px 15px 0 0;}
+        .card h1 { font-size: 22px; font-weight: bold;}
+        .card-body-header {line-height: 25px; margin: 10px 20px 0px 20px;}
+        .card-body-hashtag { color:#2478FF; font-style: italic;}
+
+        /* 카드 사진 */
+        .card_1 {background-image: url("img/영화1.png"); background-size: 100% 280px; background-repeat: no-repeat;}
+        .card_2 {background-image: url("img/회원가입창.png"); background-size: 100% 280px; background-repeat: no-repeat;}
+        .card_3 {background-image: url("img/iframe.png"); background-size: 100% 280px; background-repeat: no-repeat;}
+        .card_4 {background-image: url("img/css퀴즈1.png"); background-size: 100% 280px; background-repeat: no-repeat;}
+        .card_5 {background-image: url("img/java2.png"); background-size: 100% 200px; background-repeat: no-repeat;}
+    </style>
+</head>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+    <!-- 헤더영역 -->
+    <div class="header">
+        <a href="index.html"><img src="img/로고.png" style="width: 250px; padding-left: 50px;"></a>
+        <nav>
+            <span>
+                <a href="htmlPage.html">HTML5</a>
+            </span>
+            <span>
+                <a href="cssPage.html">CSS3</a>
+            </span>
+            <span>
+                <a href="jsPage.html">JavaScript</a>
+            </span>
+            <span>
+                <a href="aboutUs.html">About Us</a>
+            </span>
+        </nav>
+    </div>
+
+    <!-- 본문 -->
+    <span class="content_title">CONTETNS</span>
+    <div class="contents">
+        <div class="contents_inner">
+            <a href="htmlPage.html">
+                <div class="card">
+                    <div class="card-header card_1"></div>
+                    <div class="card-body">
+                        <div class="card-body-header">
+                            <h1>HTML5</h1>
+                            <p class="card-body-hashtag">#문서구조 #기본태그 #멀티미디어태그</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="htmlPage.html">
+                <div class="card">
+                    <div class="card-header card_2"></div>
+                    <div class="card-body">
+                        <div class="card-body-header">
+                            <h1>HTML5</h1>
+                            <p class="card-body-hashtag">#입력양식태그</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="htmlPage.html">
+                <div class="card">
+                    <div class="card-header card_3"></div>
+                    <div class="card-body">
+                        <div class="card-body-header">
+                            <h1>HTML5</h1>
+                            <p class="card-body-hashtag">#하이퍼링크 #iframe</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="cssPage.html">
+                <div class="card">
+                    <div class="card-header card_4"></div>
+                    <div class="card-body">
+                        <div class="card-body-header">
+                            <h1>CSS3</h1>
+                            <p class="card-body-hashtag">#css박스모델 #css박스배치 #css셀렉터</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="jsPage.html">
+                <div class="card">
+                    <div class="card-header card_5"></div>
+                    <div class="card-body">
+                        <div class="card-body-header">
+                            <h1>JavaScript</h1>
+                            <p class="card-body-hashtag">#객체 #메소드</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    <div class="footer_section">
+        <div class="footer">
+            <a href="index.html" class="f_logo"><img src="img/흑백로고.png" style="width: 250px;"></a>
+            <span class="intro">
+                <span>한양대학교 ERICA 2021년 2학기 튜터링</span>
+                <div>
+                    <!-- <span>나만의 웹 페이지 만들기</span> -->
+                    <ul class="name">
+                        <li>홍준영</li> <li>조준형</li> <li>김채연</li>
+                    </ul>
+                </div>
+            </span>
+        </div>
+    </div>
+</body>
+</html>

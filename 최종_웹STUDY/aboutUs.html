@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>웹STUDY :: About Us </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/icon.ico">
+
+    <!-- 부트스트랩 CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 기본값, 헤더, 푸터 스타일 -->
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+
+    <style>
+        .profile_box { width:150px; height: 150px; border-radius: 70%; overflow:hidden; margin: auto; margin-top:30px;}
+        .profile_box .profile {width:100%; height: 100%; object-fit: cover;}
+    </style>
+
+</head>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">   
+    <!-- 헤더영역 -->
+    <div class="header">
+        <a href="index.html"><img src="img/로고.png" style="width: 250px; padding-left: 50px;"></a>
+        <nav>
+            <span>
+                <a href="htmlPage.html">HTML5</a>
+            </span>
+            <span>
+                <a href="cssPage.html">CSS3</a>
+            </span>
+            <span>
+                <a href="jsPage.html">JavaScript</a>
+            </span>
+            <span>
+                <a href="aboutUs.html" class="active">About Us</a>
+            </span>
+        </nav>
+    </div>
+
+    <!-- 본문 -->
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 offset-sm-3 mt-4 mb-4" style="padding-top:80px">
+                    <h2 class="text-center">Team.<span style="font-style:italic">나만의 웹페이지 만들기</span></h2>
+                    <p class="text-center">- 2021년 2학기 또래 튜터링 -</p>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card-box text-center">
+                        <div class="user-pic">
+                            <div class="profile_box" style="background: white;">
+                                <img src="img/about1.jpg" class="img-fluid profile" alt="홍준영">
+                            </div>
+                        </div>
+                        <br><br>
+                        <h4>홍준영</h4>
+                        <h6>2018045950</h6>
+                        <br>
+                        <hr>
+                        <br>
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#about1_modal">Know More</button>
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="card-box text-center">
+                        <div class="user-pic">
+                            <div class="profile_box" style="background: white;">
+                                <img src="img/about2.jpg" class="img-fluid profile" alt="조준형">
+                            </div>
+                        </div>
+                        <br><br>
+                        <h4>조준형</h4>
+                        <h6>2020011949</h6>
+                        <br>
+                        <hr>
+                        <br>
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#about2_modal">Know More</a>
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="card-box text-center">
+                        <div class="user-pic">
+                            <div class="profile_box" style="background: white;">
+                                <img src="img/about3.jpg" class="img-fluid profile" alt="김채연">
+                            </div>
+                        </div>
+                        <br><br>
+                        <h4>김채연</h4>
+                        <h6>2020088922</h6>
+                        <br>
+                        <hr>
+                        <br>
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#about3_modal">Know More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="about1_modal" tabindex="-1" aria-labelledby="about1_modallabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="about1_modallabel" style="font-weight: bold;">홍준영</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>소속 : ICT융합학부</p>
+                    <p>학번 : 2018045950</p>
+                    <p>생년월일 : 1998.02.07</p>
+                    <p>tel : 010-3384-4739</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="about2_modal" tabindex="-1" aria-labelledby="about2_modallabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="about2_modallabel" style="font-weight: bold;">조준형</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>소속 : ICT융합학부</p>
+                    <p>학번 : 2020011949</p>
+                    <p>생년월일 : 2001.09.07</p>
+                    <p>tel : 010-9688-9651</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="about3_modal" tabindex="-1" aria-labelledby="about3_modallabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="about3_modallabel" style="font-weight: bold;">김채연</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>소속 : 소프트웨어학부</p>
+                    <p>학번 : 2020088922</p>
+                    <p>생년월일 : 2000.07.04</p>
+                    <p>tel : 010-9408-2576</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <div class="footer_section">
+        <div class="footer">
+            <a href="index.html" class="f_logo"><img src="img/흑백로고.png" style="width: 250px;"></a>
+            <span class="intro">
+                <span>한양대학교 ERICA 2021년 2학기 튜터링</span>
+                <div>
+                    <!-- <span>나만의 웹 페이지 만들기</span> -->
+                    <ul class="name">
+                        <li>홍준영</li> <li>조준형</li> <li>김채연</li>
+                    </ul>
+                </div>
+            </span>
+        </div>
+    </div>
+
+    <!-- 부트스트랩 js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
